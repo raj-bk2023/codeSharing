@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar with hover</title>
+    <style>
+  
+      nav{
+        border: 1px solid navy;
+        height: 7vh;
+        width: 100%;
+      }
+      .navContainer {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: space-evenly;
+        border: 1px solid aqua;
+      }
+      
+      .navContainer div{
+        display: flex;
+        flex-direction: column;
+        /* background-color:  green; */
+        width: 80px;
+        /* height: 20px; */
+      }
+      
+      li{
+        list-style-type: none;
+      }
+
+      a{
+          text-decoration: none;
+      }
+      .drop1 {
+        display: none;
+      }
+      .drop2 {
+        display: none;
+      }
+      .drop3 {
+        display: none;
+      }
+      .drop4 {
+        display: none;
+      }
+ 
+
+
+    </style>
+  </head>
+  <body>
+       <nav>
+            <div class="navContainer">
+          
+              <div class="Link1">
+                  About 
+                <ul class="drop1">
+                  <li> <a href="#">Old testament</a> </li>
+                  <li> <a href="#">New testament</a> </li>
+                  <li> <a href="#">FellowShip</a> </li>
+                </ul>
+                
+              </div>
+              
+              <div class="Link2">
+                Resources
+                 <ul class="drop2">
+                  <li> <a href="#">Funds</a> </li>
+                  <li> <a href="#">Baptism</a> </li>
+                  <li> <a href="#">Our History</a> </li>
+                </ul>
+              </div>
+              
+              <div class="Link3">
+              Gallery
+                <ul class="drop3">
+                  <li> <a href="#">2021</a> </li>
+                  <li> <a href="#">2022</a> </li>
+                  <li> <a href="#">2023</a> </li>
+                  <li> <a href="#">2024</a> </li>
+                </ul>
+              </div>
+              
+              <div class="Link4">
+                Faculties
+              <ul class="drop4">
+                    <li> <a href="#">Dr Fr.Donatus Kujur</a> </li>
+                    <li> <a href="#">Fr. C.Pragasan</a> </li>
+                    <li> <a href="#">Fr Binay Xavier</a> </li>
+                  </ul>
+              .</div>
+</div>
+</nav>
+<script>
+
+  // const Link1=document.querySelector(".Link1");
+  const Link1=document.querySelector(".Link1");
+  // const div1=document.querySelector(".Div1")
+  const Link2=document.querySelector(".Link2");
+  const Link3=document.querySelector(".Link3");
+  const Link4=document.querySelector(".Link4");
+
+  //All dropdown <ul>
+  const drop1=document.querySelector(".drop1");
+  const drop2=document.querySelector(".drop2");
+  const drop3=document.querySelector(".drop3");
+  const drop4=document.querySelector(".drop4");
+
+Link1.addEventListener("mouseover",()=>{
+   drop1.style.display="block"
+  })
+Link1.addEventListener("mouseout",()=>{
+  drop1.style.display="none"
+})
+
+Link2.addEventListener("mouseover",()=>{
+   drop2.style.display="block"
+  })
+Link2.addEventListener("mouseout",()=>{
+  drop2.style.display="none"
+})
+
+Link3.addEventListener("mouseover",()=>{
+   drop3.style.display="block"
+  })
+Link3.addEventListener("mouseout",()=>{
+  drop3.style.display="none"
+})
+
+Link4.addEventListener("mouseover",()=>{
+   drop4.style.display="block"
+  })
+Link4.addEventListener("mouseout",()=>{
+  drop4.style.display="none"
+})
+</script>
+  </body>
+</html>
